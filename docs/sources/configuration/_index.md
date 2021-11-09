@@ -1057,7 +1057,7 @@ lifecycler:
 # CLI flag: -ingester.query-store-max-look-back-period
 [query_store_max_look_back_period: <duration> | default = 0]
 
-# Forget about ingesters having heartbeat timestamps older than `ring.kvstore.heartbeat_timeout`.
+# Forget about ingesters having heartbeat timestamps older than `ring.heartbeat_timeout`.
 # This is equivalent to clicking on the `/ring` `forget` button in the UI:
 # the ingester is removed from the ring.
 # This is a useful setting when you are sure that an unhealthy node won't return.
